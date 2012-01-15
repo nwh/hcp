@@ -1,4 +1,4 @@
-%hcp_cvx_init2  use cvx to generate an initial point
+%hcp_cvx_init2  use cvx to generate an initial point biased by vector v
 
 function y0 = hcp_cvx_init2(P,v)
  
