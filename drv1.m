@@ -27,14 +27,21 @@ function drv1
   
   [A b] = hcp_con(P);
   Px = hcp_P2Px(P,x0);
-  
-  
+
+  % evaluate function
   [f g H] = hcp_obj(x0,P);
   
+  % inspect patterns
+  x1 = 1:m;
+  Px1 = hcp_P2Px(P,x1);
+  
+  % test derivatives
   [g_fd g_true] = grad_checker(@(s)hcp_obj(s,P),x0,1e-8);
   g_err = norm(g_fd-g_true)
   
   [H_fd H_true] = hess_checker(@(s)hcp_obj(s,P),x0,1e-8);
   H_err = norm(H_fd-H_true,1)
+  
+  keyboard
   
 end
