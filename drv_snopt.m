@@ -1,6 +1,6 @@
-% attempt to solve hcp problem with snopt
+%drv_snopt attempt to solve hcp problem with snopt
 
-function drv6
+function drv_snopt
 
   % construct graph
   % envelope graph
