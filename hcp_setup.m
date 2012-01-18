@@ -6,5 +6,7 @@ function hcp_setup
   load_cvx
   load_luimc
   load_snlc
+  load_ipopt
+  load_arcopt
   
 end
