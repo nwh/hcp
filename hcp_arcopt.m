@@ -1,7 +1,16 @@
 %hcp_arcopt  attempt to solve hcp with arcopt
 
-function [x info] = hcp_arcopt(P)
-
+function [hcp_slv] = hcp_arcopt(P,name,solve_tol)
+  
+  % handle optional input
+  if nargin < 2 || isempty(name)
+    name = 'hcp_problem';
+  end
+  
+  if nargin < 3 || isempty(solve_tol)
+    solve_tol = -.99;
+  end
+  
   % get number of edges
   num_edges = sum(P(:));
   
@@ -27,13 +36,25 @@ function [x info] = hcp_arcopt(P)
   % options for arcopt
   options = arcopt_nm_lc.optset();
   options.crash = 'firstm';
+  options.print_level = 'none';
 
   % solve
   mysolver = arcopt_nm_lc(func,hess,x0,bl,bu,A,c,c,options);
-  [xstar f flg aux] = mysolver.solve();
+  [xstar fstar solver_info aux] = mysolver.solve();
 
-  x = xstar;
-  info = f;
+  % prepare output structure
+  hcp_slv.xstar = xstar;
+  hcp_slv.fstar = fstar;
+  hcp_slv.solver_info = solver_info;
+  hcp_slv.itercnt = aux.phase2cnt;
+  hcp_slv.fevcnt = aux.fevcnt;
+  hcp_slv.name = name;
+  
+  if fstar <= solve_tol
+    hcp_slv.hc_found = 1;
+  else
+    hcp_slv.hc_found = 0;
+  end
   
   %keyboard
 
