@@ -2,58 +2,37 @@
 
 function drv_ipopt
 
-  % construct graph
-  % envelope graph
-%   E = [1 2
-%     1 5
-%     1 4
-%     2 6
-%     2 3
-%     3 6
-%     3 4
-%     4 5
-%     5 6];
-%   
-%   [P num_edges] = hcp_edg2adj(E);
+  % choose results dir
+  res_dir = 'results/2012-01-18/';
   
-  addpath graphs
-  P = envelope;
-  num_edges = sum(sum(P));
+  % create results dir if it does not exist
+  if ~exist(res_dir,'dir')
+    mkdir(res_dir);
+  end
+  
+  % load data
+  D = load('graphs/hcp_data.mat');
+  
+  % combine data
+  hcp_data = [D.hcp_set; D.hcp_10; D.hcp_12; D.hcp_14 ];
+  hcp_num = length(hcp_data);
+  %hcp_num = 10;
+  
+  % attempt to solve
+  res_ipopt = [];
+  progressbar('hcp ipopt');
+  for i = 1:hcp_num
+    fprintf('working on: %13s is_hamil: %d\n',hcp_data(i).name,hcp_data(i).is_hamil);
+    if hcp_data(i).is_hamil
+      res = hcp_ipopt(hcp_data(i).P,hcp_data(i).name);
+      res_ipopt = [res_ipopt; res];
+    end
+    progressbar(i/hcp_num);
+  end
+  
+  % save results
+  save([res_dir 'res_ipopt.mat'],'res_ipopt')
 
-  % get initial point
-  x0 = hcp_cvx_init1(P);
-  %v = rand(num_edges,1);
-  %x0 = hcp_cvx_init2(P,v);
-
-  % get constraints
-  [A c] = hcp_con(P);
-  A = A(1:end-1,:);
-  c = c(1:end-1);
-  
-  % construct function struct
-  funcs.objective = @(x) hcp_func(x,P);
-  funcs.gradient = @(x) hcp_grad(x,P);
-  funcs.constraints = @(x) A*x;
-  funcs.jacobian = @(x) A;
-  funcs.jacobianstructure = @() A;
-  funcs.hessian = @(x,sigma,lambda) sigma*hcp_hess(x,P,'L');
-  funcs.hessianstructure = @() hcp_hess_pat(P,'L');
-  
-  % set bounds
-  options.lb = zeros(num_edges,1);
-  options.ub = ones(num_edges,1);
-  options.cl = c;
-  options.cu = c;
-
-  % set ipopt options
-  %options.ipopt.derivative_test = 'second-order';
-  options.ipopt.jac_c_constant = 'yes';
-  %options.ipopt.hessian_approximation = 'limited-memory';
-  %options.ipopt.limited_memory_max_history = 20;
-  
-  % call ipopt
-  [x, info] = ipopt(x0,funcs,options);
-  
-  keyboard
+  %keyboard
   
 end

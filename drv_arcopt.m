@@ -19,12 +19,14 @@ function drv_arcopt
   
   % attempt to solve
   res_arcopt = [];
-  for i = 1:10
+  progressbar('hcp arcopt');
+  for i = 1:hcp_num
     fprintf('working on: %13s is_hamil: %d\n',hcp_data(i).name,hcp_data(i).is_hamil);
     if hcp_data(i).is_hamil
       res = hcp_arcopt(hcp_data(i).P,hcp_data(i).name);
       res_arcopt = [res_arcopt; res];
     end
+    progressbar(i/hcp_num);
   end
   
   % save results

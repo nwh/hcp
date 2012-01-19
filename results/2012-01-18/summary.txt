@@ -1,0 +1,7 @@
+total number of problems: 574
+ arcopt # solved: 454
+ arcopt % solved: 0.790941
+arcopt total fev: 12652
+  ipopt # solved: 300
+  ipopt % solved: 0.522648
+ ipopt total fev: 63322

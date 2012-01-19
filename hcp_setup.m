@@ -8,5 +8,6 @@ function hcp_setup
   load_snlc
   load_ipopt
   load_arcopt
+  load_mcute
   
 end
