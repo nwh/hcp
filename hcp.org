@@ -1,0 +1,15 @@
+* experiments
+
+The experimental results are stored in sub dirs of results.  This file contains
+some short notes describing the experiments.
+
+** <2012-01-18 Wed> comparison between arcopt and ipopt on cubic graphs
+
+All graphs supplied by Haythorpe and indicated as having a ham. cycle were run
+with both arcopt and ipopt.
+
+Individual graphs were given to hcp_arcopt.m and hcp_ipopt.m.  The drivers for
+the experiment are drv_arcopt.m and drv_ipopt.m.
+
+The resulting tables and summary were produced by drv_results.m
+
