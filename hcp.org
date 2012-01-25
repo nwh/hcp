@@ -13,3 +13,11 @@ the experiment are drv_arcopt.m and drv_ipopt.m.
 
 The resulting tables and summary were produced by drv_results.m
 
+** <2012-01-25 Wed> separate results for 10, 12, and 14 node graphs
+
+This experiment did two things:
+
+- printed output for each solve of hcp_data with arcopt
+
+- looked at the overall results for 10, 12, and 14 node graphs
+
