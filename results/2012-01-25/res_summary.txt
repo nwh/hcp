@@ -1,0 +1,30 @@
+... arcopt hcp summary ...
+total number of problems.. 574
+arcopt # solved........... 454
+arcopt % solved........... 0.790941
+arcopt total fev.......... 12652
+arcopt avg fev............ 22.0418
+
+... arcopt hcp summary: 10 nodes ...
+number of graphs.......... 19
+number of graphs with hc.. 17
+arcopt # solved........... 15
+arcopt % solved........... 0.882353
+arcopt total fev.......... 275
+arcopt avg fev............ 16.1765
+
+... arcopt hcp summary: 12 nodes ...
+number of graphs.......... 85
+number of graphs with hc.. 80
+arcopt # solved........... 67
+arcopt % solved........... 0.8375
+arcopt total fev.......... 1532
+arcopt avg fev............ 19.15
+
+... arcopt hcp summary: 14 nodes ...
+number of graphs.......... 509
+number of graphs with hc.. 474
+arcopt # solved........... 370
+arcopt % solved........... 0.780591
+arcopt total fev.......... 10804
+arcopt avg fev............ 22.7932
