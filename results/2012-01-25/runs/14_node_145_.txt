@@ -1,0 +1,64 @@
+
+Matrix stats:
+ m = 27
+ n = 42
+ nnz(A) = 81
+ max(|A|) = 1.0e+00
+
+Linear constraints:
+ <- : 0
+ -< : 0
+ << : 0
+ == : 27
+ -- : 0
+
+Variable bounds:
+ <- : 0
+ -< : 0
+ << : 42
+ == : 0
+ -- : 0
+Initial point projected into bounds.
+
+Phase 1 initiated.
+
+Phase 1 complete: feasible point found.
+
+Phase 2 initiated.
+
+ iter fevcnt        f   ||z|| D     eval M s scnt    sres     stp bas bfac
+    1      2 -2.5e-02 1.2e-02   -8.3e-01 m 0   10 1.4e-07 1.4e-01  nb u   
+    2      3 -2.7e-02 8.3e-02   -1.3e+00 m 0   10 2.1e-07 1.2e-02  nb u   
+    3      4 -4.5e-02 9.2e-02   -1.0e+00 m 0   11 2.0e-08 7.7e-02  nb u   
+    4      5 -7.5e-02 1.7e-01   -1.6e+00   0   10 3.8e-07 2.8e-01  nb u   
+    5      6 -1.1e-01 3.0e-01   -3.0e+00   0   10 3.3e-08 1.1e-01  nb u   
+    6      7 -1.3e-01 3.5e-01   -4.1e+00   0    9 4.1e-07 4.7e-02  nb u   
+    7      8 -1.6e-01 2.1e-01   -1.7e+00   0    9 1.4e-11 1.3e-01  nb u   
+    8      9 -1.7e-01 2.2e-01   -1.4e+00   0    8 7.8e-12 1.5e-02  nb u   
+    9     10 -1.8e-01 2.1e-01   -1.3e+00   0    7 5.1e-12 3.4e-02  nb u   
+   10     11 -3.3e-01 2.0e-01   -1.4e+00   0    6 4.4e-12 5.2e-01  nb u   
+
+ iter fevcnt        f   ||z|| D     eval M s scnt    sres     stp bas bfac
+   11     12 -4.2e-01 4.1e-01   -3.0e+00   0    5 7.9e-12 1.4e-01  nb u   
+   12     13 -4.4e-01 3.6e-01   -3.7e+00   0    4 8.4e-12 1.5e-02  n      
+   13     14 -7.3e-01 3.5e-01   -2.7e+00   0    3 4.7e-12 3.5e-01  nb u   
+   14     15 -8.4e-01 7.3e-01   -9.2e-01   0    2 4.6e-12 9.7e-02  nb u   
+   15     16 -1.0e+00 8.4e-01   -8.3e-01   0    1 0.0e+00 2.7e-01  nb u   
+   16     17 -1.0e+00 1.0e+00    0.0e+00   0    1 0.0e+00 2.9e-10 snb u   
+   17     18 -1.0e+00 1.0e+00 d  0.0e+00   0    0 0.0e+00 4.9e-11 snb u   
+   18     19 -1.0e+00 1.0e+00 d  0.0e+00   0    0 0.0e+00 4.9e-11 snb u   
+
+Phase 2 complete: optimality conditions satisfied.
+
+Termination status: optimality conditions satisfied.
+Function value....... -1.00001
+Residual............. 2.22045e-16
+Phase 1 iterations... 0
+Phase 2 iterations... 18
+Total iterations..... 18
+dnc iterations....... 15
+dnc modifications.... 3
+P1 degenerate steps.. 0
+P2 degenerate steps.. 2
+Function evaluations. 19
+Time (sec)........... 0.751807

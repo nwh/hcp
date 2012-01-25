@@ -1,0 +1,72 @@
+
+Matrix stats:
+ m = 27
+ n = 42
+ nnz(A) = 81
+ max(|A|) = 1.0e+00
+
+Linear constraints:
+ <- : 0
+ -< : 0
+ << : 0
+ == : 27
+ -- : 0
+
+Variable bounds:
+ <- : 0
+ -< : 0
+ << : 42
+ == : 0
+ -- : 0
+Initial point projected into bounds.
+
+Phase 1 initiated.
+
+Phase 1 complete: feasible point found.
+
+Phase 2 initiated.
+
+ iter fevcnt        f   ||z|| D     eval M s scnt    sres     stp bas bfac
+    1      2 -3.3e-02 7.1e-03   -9.0e-01 m 0    9 5.6e-07 1.8e-01  nb u   
+    2      3 -3.7e-02 1.3e-01   -3.2e+00   0    9 9.4e-09 4.6e-02  nb u   
+    3      4 -4.0e-02 1.6e-01   -3.8e+00   0    8 1.9e-07 1.8e-02  nb u   
+    4      5 -5.5e-02 1.7e-01   -2.0e+00   0    9 3.7e-08 1.3e-01  nb u   
+    5      6 -6.8e-02 1.4e-01   -1.5e+00   0   10 2.4e-07 1.6e-01  nb u   
+    6      7 -7.1e-02 1.5e-01   -1.0e+00   0   10 6.1e-12 5.5e-02  nb u   
+    7      8 -7.3e-02 1.0e-01   -4.7e-01 m 0    9 1.3e-11 1.7e-02  nb u   
+    8      9 -8.9e-02 1.1e-01   -6.6e-01 m 0    8 3.9e-12 1.1e-01  nb u   
+    9     10 -8.9e-02 1.3e-01   -5.8e-01 m 0    7 1.9e-12 7.0e-06  nb u   
+   10     11 -8.9e-02 8.8e-02   -6.4e-01 m 0    6 1.2e-12 6.1e-03  nb u   
+
+ iter fevcnt        f   ||z|| D     eval M s scnt    sres     stp bas bfac
+   11     12 -1.2e-01 1.3e-01   -3.8e-01 m 0    5 3.6e-11 1.7e-01  nb u   
+   12     13 -1.3e-01 8.3e-02   -3.5e-01 m 0    4 4.9e-12 9.0e-02  nb u   
+   13     14 -1.5e-01 1.7e-01   -3.4e-01 m 0    3 8.4e-13 2.3e-01  nb u   
+   14     15 -1.9e-01 2.0e-01    1.4e-01   0    2 9.5e-15 1.2e+00  nb u   
+   15     16 -1.9e-01 2.1e-01    3.9e+00   0    1 0.0e+00 2.5e-01         
+   16     17 -1.9e-01 2.3e-01    4.2e+00   0    1 0.0e+00 2.4e-01         
+   17     18 -1.9e-01 2.3e-01    4.2e+00   0    1 0.0e+00 2.4e-01         
+   18     19 -1.9e-01 2.3e-01 d  0.0e+00   0    0 0.0e+00 2.2e-10 snb u   
+   19     20 -1.9e-01 1.9e-01 d  0.0e+00   0    0 0.0e+00 2.6e-10 snb u   
+   20     21 -1.9e-01 2.5e-01 d  0.0e+00   0    0 0.0e+00 2.0e-10 snb u   
+
+ iter fevcnt        f   ||z|| D     eval M s scnt    sres     stp bas bfac
+   21     22 -2.1e-01 1.2e-01    4.2e+00   0    2 1.2e-15 3.6e+00 s       
+   22     23 -2.1e-01 1.4e-02    1.9e-01   0    2 3.3e-15 2.9e+00  nb u   
+   23     24 -2.1e-01 4.2e-03    2.8e+00   0    1 0.0e+00 3.6e-01         
+   24     25 -2.1e-01 2.0e-05    2.8e+00   0    1 0.0e+00 3.6e-01         
+
+Phase 2 complete: optimality conditions satisfied.
+
+Termination status: optimality conditions satisfied.
+Function value....... -0.208416
+Residual............. 4.44089e-16
+Phase 1 iterations... 0
+Phase 2 iterations... 24
+Total iterations..... 24
+dnc iterations....... 13
+dnc modifications.... 8
+P1 degenerate steps.. 0
+P2 degenerate steps.. 3
+Function evaluations. 25
+Time (sec)........... 0.913892
