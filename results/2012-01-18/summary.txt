@@ -1,3 +1,5 @@
+... HCP Summary ...
+
 total number of problems: 574
  arcopt # solved: 454
  arcopt % solved: 0.790941
