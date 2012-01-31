@@ -1,3 +1,8 @@
+* hcp experiments
+
+This directory contains files and results for experiments using arcopt on
+Michael Haythorpe's HCP objective function.
+
 * experiments
 
 The experimental results are stored in sub dirs of results.  This file contains
