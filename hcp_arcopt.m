@@ -49,7 +49,7 @@ function [hcp_slv] = hcp_arcopt(P,name,solve_tol,print_fname)
   options.crash = 'firstm';
   options.print_file = print_fid;
   options.print_level = 'iter';
-  options.print_screen = 0;
+  options.print_screen = 1;
 
   % solve
   mysolver = arcopt_nm_lc(func,hess,x0,bl,bu,A,c,c,options);

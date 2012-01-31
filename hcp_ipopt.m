@@ -45,7 +45,7 @@ function hcp_slv = hcp_ipopt(P,name,solve_tol)
   options.cu = c;
 
   % set ipopt options
-  options.ipopt.print_level = 0;
+  options.ipopt.print_level = 5;
   %options.ipopt.derivative_test = 'second-order';
   options.ipopt.jac_c_constant = 'yes';
   %options.ipopt.hessian_approximation = 'limited-memory';

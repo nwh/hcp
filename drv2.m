@@ -1,14 +1,17 @@
-% solve hcp problem with mgf_lc
+% solve hcp problem with arcopt
 
 function drv2
   
+  % add path
+  addpath ./graphs
+  
   % load data
-  load('graphs/hcp_data.mat')
+  P = graph38
 
-  [hcp_slv] = hcp_arcopt(hcp_14(132).P);
+  [hcp_slv] = hcp_arcopt(P);
   hcp_slv
   
-  keyboard
+  %keyboard
   
 end
 
