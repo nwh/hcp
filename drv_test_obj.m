@@ -1,9 +1,8 @@
-%drv1  test the hcp objective function
+%drv_test_obj  test the hcp objective function
 
-function drv1
+function drv_test_obj
   
   %% set up problem
-  
   % envelope graph
   E = [1 2
     1 5
