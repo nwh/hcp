@@ -29,6 +29,8 @@ subject to
 cvx_end
 #+END_SRC
 
+Note that a zero indicates the failure to find a HC in the summary tables.
+
 * files and directories
 
 |------------------+------------------------------------------------------|
@@ -41,8 +43,8 @@ cvx_end
 | step1.m          | generate starting points                             |
 | step2.m          | run solvers                                          |
 | step3.m          | generate report                                      |
-| table_arcopt.org | summary of results from arcopt                       |
-| table_ipopt.org  | summary of results from ipopt                        |
+| table_arcopt.org | summary of results from arcopt, 0's indicate fails   |
+| table_ipopt.org  | summary of results from ipopt, 0's indicate fails    |
 |------------------+------------------------------------------------------|
 
 * arcopt summary
