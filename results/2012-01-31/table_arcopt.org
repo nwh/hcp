@@ -1,3 +1,10 @@
+* notes
+
+- non-zero elements are the number of function evaluations in a run that
+  found a HC
+- 0's indicate a failure to find HC
+- the first row x0(1) had the analytic center as the starting point
+
 * arcopt summary table
 
 |-------------+---------------+---------------+---------------+---------------|
@@ -29,9 +36,4 @@
 |   total_fev |           457 |           533 |          1573 |           633 |
 |     avg_fev |          45.7 |          53.3 |       92.5294 |          63.3 |
 |-------------+---------------+---------------+---------------+---------------|
-
-* notes
-
-- 0's indicate a failure to find HC in a run
-- the first row x0(1) had the analytic center as the starting point
 

@@ -1,3 +1,10 @@
+* notes
+
+- non-zero elements are the number of function evaluations in a run that
+  found a HC
+- 0's indicate a failure to find HC
+- the first row x0(1) had the analytic center as the starting point
+
 * ipopt summary table
 
 |-------------+---------------+---------------+---------------+---------------|
@@ -29,8 +36,3 @@
 |   total_fev |           363 |          1040 |          1421 |          2575 |
 |     avg_fev |           121 |      346.6667 |       177.625 |        643.75 |
 |-------------+---------------+---------------+---------------+---------------|
-
-* notes
-
-- 0's indicate a failure to find HC in a run
-- the first row x0(1) had the analytic center as the starting point
