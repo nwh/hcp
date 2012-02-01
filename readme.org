@@ -26,3 +26,15 @@ This experiment did two things:
 
 - looked at the overall results for 10, 12, and 14 node graphs
 
+** <2012-01-31 Tue> look at new graphs that MH set in arcopt and ipopt
+
+MH sent 4 new graphs:
+- graph24.m
+- graph30.m
+- graph30degree4.m
+- graph38.m
+
+I ran arcopt and ipopt on these graphs with x0:
+- as the analytic center of the feasible region
+- as a random feasible point generated with rand and refined by solving
+  min ||x0-v|| s.t. A*x0 == b, 0 <= x0 <= 1 with cvx

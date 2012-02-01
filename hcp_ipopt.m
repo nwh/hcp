@@ -1,22 +1,26 @@
 %hcp_ipopt  attempt to solve hcp problem with ipopt
 
-function hcp_slv = hcp_ipopt(P,name,solve_tol)
+function hcp_slv = hcp_ipopt(P,x0,name,solve_tol,solver_options)
   
   % handle optional input
-  if nargin < 2 || isempty(name)
+  if nargin < 3 || isempty(name)
     name = 'hcp_problem';
   end
   
-  if nargin < 3 || isempty(solve_tol)
+  if nargin < 4 || isempty(solve_tol)
     solve_tol = -.99;
+  end
+  
+  if nargin < 5 || isempty(solver_options)
+    solver_options.print_level = 0;
+    %options.ipopt.derivative_test = 'second-order';
+    %options.ipopt.hessian_approximation = 'limited-memory';
+    %options.ipopt.limited_memory_max_history = 20;
   end
   
   % get number of edges
   num_edges = sum(P(:));
   
-  % get initial point
-  x0 = hcp_cvx_init1(P);
-
   % get constraints
   [A c] = hcp_con(P);
   A = A(1:end-1,:);
@@ -45,11 +49,8 @@ function hcp_slv = hcp_ipopt(P,name,solve_tol)
   options.cu = c;
 
   % set ipopt options
-  options.ipopt.print_level = 5;
-  %options.ipopt.derivative_test = 'second-order';
+  options.ipopt = solver_options;
   options.ipopt.jac_c_constant = 'yes';
-  %options.ipopt.hessian_approximation = 'limited-memory';
-  %options.ipopt.limited_memory_max_history = 20;
   
   % call ipopt
   [xstar, info] = ipopt(x0,funcs,options);

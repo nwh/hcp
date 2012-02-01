@@ -7,7 +7,10 @@ function y0 = hcp_cvx_init2(P,v)
   [m n] = size(A);
   
   % solve the feasibility problem with cvx
+  cvx_solver sdpt3;
   cvx_quiet(true);
+  %cvx_quiet(false);
+  
   cvx_begin
     variable x(n);
     minimize( sum_square(x-v) );
