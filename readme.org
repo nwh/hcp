@@ -38,3 +38,9 @@ I ran arcopt and ipopt on these graphs with x0:
 - as the analytic center of the feasible region
 - as a random feasible point generated with rand and refined by solving
   min ||x0-v|| s.t. A*x0 == b, 0 <= x0 <= 1 with cvx
+** <2012-02-17 Fri> a simple test of the cycle guard, did not change anything
+** <2012-02-21 Tue> a run where I don't take a function eval if iterate is degenerate
+
+The result was fewer function evals and comparable results.  It only found an
+HC on 8/20 tries for the 38 node graph as opposed to 10/20 with function evals
+always on.

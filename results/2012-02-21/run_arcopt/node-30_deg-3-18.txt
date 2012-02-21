@@ -1,0 +1,107 @@
+
+Matrix stats:
+ m = 59
+ n = 90
+ nnz(A) = 177
+ max(|A|) = 1.0e+00
+
+Linear constraints:
+ <- : 0
+ -< : 0
+ << : 0
+ == : 59
+ -- : 0
+
+Variable bounds:
+ <- : 0
+ -< : 0
+ << : 90
+ == : 0
+ -- : 0
+Initial point projected into bounds.
+
+Phase 1 initiated.
+
+Phase 1 complete: feasible point found.
+
+Phase 2 initiated.
+
+iter: 1, fev: 2, f: -6e-04, ||x||: 1e+00
+
+iter ||z|| D   eval M s prd  sres   stp bas bfac fev     df    dx ns
+   1 1e-03   -3e-02 m 0  15 4e-07 2e-03  n         1 -8e-08 1e-04 30
+   2 1e-03   -3e-02 m 0  15 5e-07 3e+00  nb u      1 -4e-04 2e-01 29
+   3 4e-03   -1e-01 m 0  10 3e-07 6e-02  nb u      1 -7e-05 2e-02 28
+   4 3e-03   -4e-02 m 0  17 1e-07 3e-01  n         1 -9e-05 2e-02 27
+   5 3e-03   -4e-02 m 0  16 9e-07 3e+00  nb u      1 -2e-03 3e-01 26
+   6 9e-03   -2e-01 m 0  12 4e-07 8e-02  nb u      1 -3e-04 4e-02 25
+   7 7e-03   -1e-01 m 0  15 8e-08 3e-01  nb u      1 -7e-04 3e-02 24
+   8 9e-03   -1e-01 m 0  14 5e-07 7e-02  nb u      1 -3e-04 2e-02 23
+   9 9e-03   -1e-01 m 0  15 9e-08 7e-01  nb u      1 -4e-03 2e-01 22
+  10 2e-02   -4e-01 m 0  11 8e-07 7e-02  nb u      1 -2e-03 7e-02 21
+
+iter: 11, fev: 12, f: -1e-02, ||x||: 1e+00
+
+iter ||z|| D   eval M s prd  sres   stp bas bfac fev     df    dx ns
+  11 3e-02   -5e-01 m 0  12 9e-08 2e-02  nb u      1 -6e-04 2e-02 20
+  12 3e-02   -4e-01 m 0  12 3e-07 3e-02  nb u      1 -9e-04 2e-02 19
+  13 3e-02   -2e-01 m 0  16 4e-08 5e-02  nb u      1 -5e-04 2e-02 18
+  14 3e-02   -3e-01 m 0  14 3e-07 2e-01  nb u      1 -5e-04 6e-02 17
+  15 3e-02   -3e-01 m 0  13 2e-07 3e-01  nb u      1 -8e-03 2e-01 16
+  16 3e-02   -3e-01 m 0  15 2e-08 1e-02  nb u      1 -1e-04 5e-03 15
+  17 3e-02   -3e-01 m 0  14 6e-07 2e-01  nb u      1 -3e-03 6e-02 14
+  18 3e-02   -3e-01 m 0  14 2e-12 7e-02  nb u      1 -1e-03 3e-02 13
+  19 4e-02   -4e-01 m 0  13 2e-12 1e-01  nb u      1 -3e-03 7e-02 12
+  20 4e-02   -3e-01 m 0  12 3e-12 5e-02  nb u      1 -1e-03 2e-02 11
+
+iter: 21, fev: 22, f: -4e-02, ||x||: 1e+00
+
+iter ||z|| D   eval M s prd  sres   stp bas bfac fev     df    dx ns
+  21 4e-02   -4e-01 m 0  11 1e-12 3e-01  nb u      1 -1e-02 1e-01 10
+  22 5e-02   -7e-01 m 0  10 4e-12 7e-02  n         1 -8e-03 7e-02 9
+  23 8e-02   -9e-01 m 0   9 5e-12 3e-02  nb u      1 -4e-03 4e-02 8
+  24 9e-02   -7e-01 m 0   8 5e-12 3e-01  nb u      1 -6e-02 2e-01 7
+  25 3e-01   -1e+00   0   7 8e-12 3e-01  nb u      1 -4e-02 8e-02 6
+  26 3e-01   -2e+00   0   6 1e-11 3e-02  nb u      1 -5e-03 8e-03 5
+  27 4e-01   -2e+00   0   5 1e-11 4e-01  nb u      1 -9e-02 9e-02 4
+  28 6e-01   -2e+00   0   4 6e-12 2e-02  nb u      1 -9e-03 1e-02 3
+  29 6e-01   -2e+00   0   3 6e-12 5e-01  nb u      1 -3e-01 2e-01 2
+  30 1e+00   -2e+00   0   2 1e-11 3e-02  n         1 -5e-02 4e-02 1
+
+iter: 31, fev: 32, f: -8e-01, ||x||: 1e+00
+
+iter ||z|| D   eval M s prd  sres   stp bas bfac fev     df    dx ns
+  31 1e+00   -1e+00   0   1 0e+00 7e-01  nb u      1 -2e-01 3e-01 0
+  32 1e+00 d  0e+00   0   0 0e+00 1e-11 snb u      1  0e+00 5e-11 0
+  33 1e+00    0e+00   0   1 0e+00 2e-02 snb u      1 -2e-01 6e-02 0
+  34 1e+00 d  0e+00   0   0 0e+00 2e-11 snb u      1  0e+00 5e-11 0
+  35 1e+00 d  0e+00   0   0 0e+00 2e-11 snb u      1  0e+00 5e-11 0
+  36 1e+00    0e+00   0   1 0e+00 8e-10 snb u      1 -3e-09 2e-09 0
+  37 1e+00 d  0e+00   0   0 0e+00 1e-11 snb u      1  0e+00 5e-11 0
+  38 1e+00 d  0e+00   0   0 0e+00 2e-11 snb u      1  0e+00 5e-11 0
+  39 1e+00 d  0e+00   0   0 0e+00 2e-11 snb u      1  0e+00 5e-11 0
+  40 1e+00 d  0e+00   0   0 0e+00 2e-11 snb u      1  0e+00 5e-11 0
+
+iter: 41, fev: 34, f: -1e+00, ||x||: 1e+00
+
+iter ||z|| D   eval M s prd  sres   stp bas bfac fev     df    dx ns
+  41 1e+00 d  0e+00   0   0 0e+00 2e-11 snb u      1  0e+00 5e-11 0
+  42 1e+00 d  0e+00   0   0 0e+00 5e-11 snb u      1  0e+00 5e-11 0
+  43 1e+00 d  0e+00   0   0 0e+00 5e-11 snb u      1  0e+00 5e-11 0
+  44 1e+00    0e+00   0   1 0e+00 5e-07 snb u      1 -5e-07 5e-07 0
+  45 1e-06 d  0e+00   0   0 0e+00 5e-05 snb u      1  0e+00 5e-11 0
+
+Phase 2 complete: optimality conditions satisfied.
+
+Termination status: optimality conditions satisfied.
+Function value....... -1.00001
+Residual............. 6.66134e-16
+Phase 1 iterations... 0
+Phase 2 iterations... 45
+Total iterations..... 45
+dnc iterations....... 31
+dnc modifications.... 24
+P1 degenerate steps.. 0
+P2 degenerate steps.. 11
+Function evaluations. 35
+Time (sec)........... 3.58425

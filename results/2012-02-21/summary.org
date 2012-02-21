@@ -1,0 +1,82 @@
+* <2012-01-31 Tue> hcp-arcopt-ipopt experiment summary
+
+ARCOPT and IPOPT were applied to the HC problem on 4 new graphs provided by MH.
+The graph data is located in hcp/graphs.  The following graphs were used:
+
+- graph24.m: 24 node cubic graph
+- graph30.m: 30 node cubic graph
+- graph30degree4.m: 30 node graph, each node has degree 4
+- graph38.m: 38 node cubic graph
+
+Each HCP was tried 20 times from different starting points.  The first, denoted
+1 in the result table, was the analytic center of the feasible region.  The
+remaining 19 starting points where generated randomly.  Pseudo code showing the
+starting point generation process follows:
+
+#+BEGIN_SRC matlab
+n; % number of edges, variables in problem
+buf = .1; % small buffer to keep random values away from 0 and 1
+
+v = (1-2*buf)*rand(n,1)+buf;
+
+cvx_begin
+variable x0(n);
+minimize( sum_square(x0-v) );
+subject to
+  A*x == b;
+  x >= 0;
+  x <= 1;
+cvx_end
+#+END_SRC
+
+Note that a zero indicates the failure to find a HC in the summary tables.
+
+* files and directories
+
+|------------------+------------------------------------------------------|
+| file             | note                                                 |
+|------------------+------------------------------------------------------|
+| exp_data.mat     | matlab data for experiment, contains starting points |
+| exp_results.mat  | matlab data for results                              |
+| run_arcopt/      | dir for arcopt output                                |
+| run_ipopt/       | dir for ipopt output                                 |
+| step1.m          | generate starting points                             |
+| step2.m          | run solvers                                          |
+| step3.m          | generate report                                      |
+| table_arcopt.org | summary of results from arcopt, 0's indicate fails   |
+| table_ipopt.org  | summary of results from ipopt, 0's indicate fails    |
+|------------------+------------------------------------------------------|
+
+* original arcopt summary
+
+|-------------+---------------+---------------+---------------+---------------|
+|             | node-24_deg-3 | node-30_deg-3 | node-30_deg-4 | node-38_deg-3 |
+|-------------+---------------+---------------+---------------+---------------|
+| num_solved  |            10 |            10 |            17 |            10 |
+| frac_solved |           0.5 |           0.5 |          0.85 |           0.5 |
+| total_fev   |           457 |           533 |          1573 |           633 |
+| avg_fev     |          45.7 |          53.3 |       92.5294 |          63.3 |
+|-------------+---------------+---------------+---------------+---------------|
+
+* original ipopt summary
+
+|-------------+---------------+---------------+---------------+---------------|
+|             | node-24_deg-3 | node-30_deg-3 | node-30_deg-4 | node-38_deg-3 |
+|-------------+---------------+---------------+---------------+---------------|
+| num_solved  |             3 |             3 |             8 |             4 |
+| frac_solved |          0.15 |          0.15 |           0.4 |           0.2 |
+| total_fev   |           363 |          1040 |          1421 |          2575 |
+| avg_fev     |           121 |      346.6667 |       177.625 |        643.75 |
+|-------------+---------------+---------------+---------------+---------------|
+
+* notes for output tables
+
+- non-zero elements are the number of function evaluations in a run that
+  found a HC
+- 0's indicate a failure to find HC
+- the first row x0(1) had the analytic center as the starting point
+
+* result of new experiment
+
+Arcopt took fewer function evaluations as expected, however failed twice more
+on the 38 node graph.

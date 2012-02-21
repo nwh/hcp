@@ -1,0 +1,152 @@
+
+Matrix stats:
+ m = 75
+ n = 114
+ nnz(A) = 225
+ max(|A|) = 1.0e+00
+
+Linear constraints:
+ <- : 0
+ -< : 0
+ << : 0
+ == : 75
+ -- : 0
+
+Variable bounds:
+ <- : 0
+ -< : 0
+ << : 114
+ == : 0
+ -- : 0
+Initial point projected into bounds.
+
+Phase 1 initiated.
+
+Phase 1 complete: feasible point found.
+
+Phase 2 initiated.
+
+iter: 1, fev: 2, f: -1e-04, ||x||: 1e+00
+
+iter ||z|| D   eval M s prd  sres   stp bas bfac fev     df    dx ns
+   1 1e-04   -4e-03 m 0  10 5e-07 2e+01  nb u      1 -6e-05 3e-01 38
+   2 3e-04   -1e-02 m 0   9 8e-07 4e+00  nb u      1 -6e-05 1e-01 37
+   3 5e-04   -1e-02 m 0  11 1e-07 5e+00  nb u      1 -1e-04 2e-01 36
+   4 8e-04   -2e-02 m 0  11 1e-07 2e+00  nb u      1 -1e-04 1e-01 35
+   5 1e-03   -2e-02 m 0  12 8e-07 2e+00  nb u      1 -1e-04 1e-01 34
+   6 1e-03   -3e-02 m 0  13 4e-07 2e-02  nb u      1 -1e-06 9e-04 33
+   7 1e-03   -2e-02 m 0  14 4e-07 3e+00  nb u      1 -2e-04 2e-01 32
+   8 2e-03   -3e-02 m 0  16 6e-07 4e-01  nb u      1 -6e-05 1e-02 31
+   9 2e-03   -4e-02 m 0  13 7e-07 1e+00  nb u      1 -2e-04 9e-02 30
+  10 3e-03   -4e-02 m 0  15 9e-07 2e+00  nb u      1 -9e-04 1e-01 29
+
+iter: 11, fev: 12, f: -3e-03, ||x||: 1e+00
+
+iter ||z|| D   eval M s prd  sres   stp bas bfac fev     df    dx ns
+  11 5e-03   -7e-02 m 0  14 3e-07 6e-01  nb u      1 -6e-04 4e-02 28
+  12 6e-03   -8e-02 m 0  15 2e-07 4e-01  n         1 -5e-04 3e-02 27
+  13 7e-03   -9e-02 m 0  15 2e-07 3e-01  nb u      1 -5e-04 3e-02 26
+  14 9e-03   -1e-01 m 0  14 5e-07 1e-01  nb u      1 -4e-04 3e-02 25
+  15 1e-02   -1e-01 m 0  14 8e-07 3e-01  nb u      1 -9e-04 5e-02 24
+  16 1e-02   -2e-01 m 0  14 1e-07 3e-03  nb u      1 -1e-05 9e-04 23
+  17 1e-02   -1e-01 m 0  15 8e-07 4e-02  nb u      1 -9e-05 7e-03 22
+  18 1e-02   -2e-01 m 0  14 3e-07 8e-02  nb u      1 -2e-04 2e-02 21
+  19 1e-02   -1e-01 m 0  14 6e-07 9e-02  nb u      1 -2e-04 2e-02 20
+  20 1e-02   -2e-01 m 0  14 1e-07 4e-01  nb u      1 -1e-03 1e-01 19
+
+iter: 21, fev: 22, f: -1e-02, ||x||: 1e+00
+
+iter ||z|| D   eval M s prd  sres   stp bas bfac fev     df    dx ns
+  21 2e-02   -2e-01 m 0  13 2e-07 5e-01  nb u      1 -5e-03 2e-01 18
+  22 3e-02   -4e-01 m 0  12 5e-07 6e-03  nb u      1 -1e-04 3e-03 17
+  23 3e-02   -3e-01 m 0  14 4e-07 1e-01  nb u      1 -2e-03 4e-02 16
+  24 3e-02   -3e-01 m 0  13 3e-07 1e-02  nb u      1 -3e-04 5e-03 15
+  25 3e-02   -3e-01 m 0  13 3e-07 5e-03  nb u      1 -9e-05 2e-03 14
+  26 3e-02   -4e-01 m 0  12 1e-07 1e-01  nb u      1 -3e-03 7e-02 13
+  27 4e-02   -5e-01 m 0  12 8e-08 5e-02  nb u      1 -2e-03 3e-02 12
+  28 5e-02   -5e-01 m 0  12 4e-12 1e-01  nb u      1 -7e-03 8e-02 11
+  29 9e-02   -1e+00 m 0  10 3e-08 4e-03  n         1 -9e-04 1e-02 10
+  30 9e-02   -1e+00 m 0  10 8e-12 7e-04  nb u      1 -1e-04 2e-03 9
+
+iter: 31, fev: 32, f: -3e-02, ||x||: 1e+00
+
+iter ||z|| D   eval M s prd  sres   stp bas bfac fev     df    dx ns
+  31 5e-02   -3e-01 m 0   9 3e-12 4e-02  nb u      1 -1e-03 2e-02 8
+  32 5e-02   -3e-01 m 0   8 2e-12 7e-01  nb u      1 -3e-02 2e-01 7
+  33 1e-01   -6e-01 m 0   7 4e-12 1e-02  nb u      1 -1e-03 1e-02 6
+  34 1e-01   -5e-01 m 0   6 3e-12 3e-01  nb u      1 -3e-02 1e-01 5
+  35 2e-01   -1e+00   0   5 3e-12 3e-01  nb u      1 -2e-02 6e-02 4
+  36 2e-01   -8e-01 m 0   4 4e-12 1e-01  nb u      1 -3e-02 1e-01 3
+  37 3e-01   -3e-01 m 0   3 2e-13 5e-01  nb u      1 -3e-02 2e-01 2
+  38 4e-01   -2e-01 m 0   2 9e-13 9e-02  nb u      1 -5e-03 3e-02 1
+  39 4e-01    5e-01   0   1 0e+00 2e+00            1 -1e-02 2e-01 1
+  40 5e-01    5e-01   0   1 0e+00 2e+00            1 -2e-04 3e-02 1
+
+iter: 41, fev: 42, f: -2e-01, ||x||: 1e+00
+
+iter ||z|| D   eval M s prd  sres   stp bas bfac fev     df    dx ns
+  41 5e-01    6e-01   0   1 0e+00 2e+00            1 -3e-06 3e-03 1
+  42 5e-01    6e-01   0   1 0e+00 2e+00            1 -4e-10 4e-05 1
+  43 5e-01 d  0e+00   0   0 0e+00 1e-10 snb u      1  0e+00 5e-11 1
+  44 5e-01 d  0e+00   0   0 0e+00 1e-10 snb u      1  0e+00 5e-11 1
+  45 4e-01 d  0e+00   0   0 0e+00 1e-10 snb u      1  0e+00 5e-11 1
+  46 4e-01 d  0e+00   0   0 0e+00 1e-10 snb u      1  0e+00 5e-11 1
+  47 4e-01    6e-01   0   2 7e-16 3e-01 snb u      1 -4e-02 1e-01 1
+  48 5e-01    3e+00   0   1 0e+00 4e-01            1 -2e-02 1e-01 1
+  49 7e-01    1e+00   0   1 0e+00 1e+00            1 -7e-03 1e-01 1
+  50 8e-01    4e-01   0   1 0e+00 3e+00            1 -2e-03 1e-01 1
+
+iter: 51, fev: 48, f: -3e-01, ||x||: 1e+00
+
+iter ||z|| D   eval M s prd  sres   stp bas bfac fev     df    dx ns
+  51 8e-01    2e-01   0   1 0e+00 5e+00            1 -4e-04 6e-02 1
+  52 8e-01    2e-01   0   1 0e+00 4e+00            1 -2e-06 4e-03 1
+  53 8e-01    2e-01   0   1 0e+00 4e+00            1 -4e-10 6e-05 1
+  54 8e-01 d  0e+00   0   0 0e+00 6e-11 snb u      1  0e+00 5e-11 1
+  55 5e-01    2e-01   0   2 3e-16 1e-06 snb u      1 -2e-07 5e-07 1
+  56 5e-01    2e-01   0   2 3e-16 1e-06 snb u      1 -2e-07 5e-07 1
+  57 3e-01    2e-01   0   1 0e+00 4e+00            1 -5e-12 6e-06 1
+  58 3e-01 d  0e+00   0   0 0e+00 1e-10 snb u      1  0e+00 5e-11 1
+  59 3e-01 d  0e+00   0   0 0e+00 2e-10 snb u      1  0e+00 5e-11 1
+  60 2e-01 d  0e+00   0   0 0e+00 3e-10 snb u      1  0e+00 5e-11 1
+
+iter: 61, fev: 53, f: -3e-01, ||x||: 1e+00
+
+iter ||z|| D   eval M s prd  sres   stp bas bfac fev     df    dx ns
+  61 1e-01 d  0e+00   0   0 0e+00 5e-10 snb u      1  0e+00 5e-11 1
+  62 8e-02 d  0e+00   0   0 0e+00 6e-10 snb u      1  0e+00 5e-11 1
+  63 3e-02    2e-01   0   2 8e-16 2e+01 snb u      2 -4e-02 6e-01 1
+  64 1e+00    1e+00   0   1 0e+00 7e-01            1 -1e-02 1e-01 1
+  65 1e+00    2e+00   0   1 0e+00 5e-01            1 -3e-04 2e-02 1
+  66 1e+00    2e+00   0   1 0e+00 5e-01            1 -2e-07 5e-04 1
+  67 1e+00 d  0e+00   0   0 0e+00 4e-11 snb  f     1  0e+00 5e-11 1
+  68 7e-01    2e+00   0   2 3e-16 8e-07 snb u      1 -3e-07 5e-07 1
+  69 8e-01 d  0e+00   0   0 0e+00 6e-11 snb u      1  0e+00 5e-11 1
+  70 9e-01 d  0e+00   0   0 0e+00 5e-11 snb u      1  0e+00 5e-11 1
+
+iter: 71, fev: 59, f: -3e-01, ||x||: 1e+00
+
+iter ||z|| D   eval M s prd  sres   stp bas bfac fev     df    dx ns
+  71 7e-01 d  0e+00   0   0 0e+00 7e-11 snb u      1  0e+00 5e-11 1
+  72 3e-01 d  0e+00   0   0 0e+00 1e-10 snb u      1  0e+00 5e-11 1
+  73 3e-01 d  0e+00   0   0 0e+00 2e-10 snb u      1  0e+00 5e-11 1
+  74 2e-01 d  0e+00   0   0 0e+00 2e-10 snb u      1  0e+00 5e-11 1
+  75 1e-01    2e+00   0   2 1e-15 3e-06 snb u      1 -7e-08 5e-07 1
+  76 1e-01 d  0e+00   0   0 0e+00 4e-10 snb u      1  0e+00 5e-11 1
+  77 9e-02 d  0e+00   0   0 0e+00 5e-10 snb u      1  0e+00 5e-11 1
+  78 7e-02 d  0e+00   0   0 0e+00 7e-10 snb u      1  0e+00 5e-11 1
+
+Phase 2 complete: optimality conditions satisfied.
+
+Termination status: optimality conditions satisfied.
+Function value....... -0.306924
+Residual............. 5.55112e-16
+Phase 1 iterations... 0
+Phase 2 iterations... 78
+Total iterations..... 78
+dnc iterations....... 38
+dnc modifications.... 37
+P1 degenerate steps.. 0
+P2 degenerate steps.. 20
+Function evaluations. 60
+Time (sec)........... 9.75826
