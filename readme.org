@@ -44,3 +44,20 @@ I ran arcopt and ipopt on these graphs with x0:
 The result was fewer function evals and comparable results.  It only found an
 HC on 8/20 tries for the 38 node graph as opposed to 10/20 with function evals
 always on.
+** <2012-02-22 Wed> plotting number of function evals vs. graph size for arcopt
+
+The code simple plots data from the table:
+
+|-----------------+--------+------+-----|
+| number of nodes | degree | nvar | fev |
+|-----------------+--------+------+-----|
+|              10 |      3 |   30 |  16 |
+|              12 |      3 |   36 |  19 |
+|              14 |      3 |   42 |  23 |
+|              24 |      3 |   72 |  34 |
+|              30 |      3 |   90 |  39 |
+|              30 |      4 |  120 |  71 |
+|              38 |      3 |  114 |  48 |
+|-----------------+--------+------+-----|
+
+
