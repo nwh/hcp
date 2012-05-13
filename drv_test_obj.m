@@ -4,17 +4,20 @@ function drv_test_obj
   
   %% set up problem
   % envelope graph
-  E = [1 2
-    1 5
-    1 4
-    2 6
-    2 3
-    3 6
-    3 4
-    4 5
-    5 6];
-  
-  P = hcp_edg2adj(E);
+%   E = [1 2
+%     1 5
+%     1 4
+%     2 6
+%     2 3
+%     3 6
+%     3 4
+%     4 5
+%     5 6];
+%   
+%   P = hcp_edg2adj(E);
+
+  P = graph30;
+
   n = size(P,1);
   [i j] = find(P);
   

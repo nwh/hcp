@@ -1,10 +1,13 @@
 %hcp_rand1  generate a random graph with cycle
 
-function [P] = hcp_rand1(num_nodes,add_edges)
+function [P xc] = hcp_rand1(num_nodes,add_edges)
   
   v = (1:num_nodes)';
   E = [v circshift(v,1)];
   P = hcp_edg2adj(E);
+  Pc = triu(P);
+  Pc(1,end) = 0;
+  Pc(end,1) = 1;
   
   while add_edges > 0
   
@@ -22,6 +25,8 @@ function [P] = hcp_rand1(num_nodes,add_edges)
   
   rp = randperm(num_nodes);
   P = P(rp,rp);
+  Pc = Pc(rp,rp);
+  xc = hcp_Px2x(P,Pc);
   
   %keyboard
   

@@ -1,0 +1,28 @@
+* total
+| num graphs         |   613 |     0 |
+| num graphs with hc |   571 |     0 |
+| num hc found       |   452 |   298 |
+| % found            |  79.2 |  52.2 |
+| tot fev            | 12611 | 63148 |
+| avg fev            |  22.1 | 110.6 |
+* 10 node
+| num 10 node graphs         |   19 |    0 |
+| num 10 node graphs with hc |   17 |    0 |
+| num hc found               |   15 |    7 |
+| % found                    | 88.2 | 41.2 |
+| tot fev                    |  275 | 1430 |
+| avg fev                    | 16.2 | 84.1 |
+* 12 node
+| num 12 node graphs         |   85 |     0 |
+| num 12 node graphs with hc |   80 |     0 |
+| num hc found               |   67 |    39 |
+| % found                    | 83.8 |  48.8 |
+| tot fev                    | 1532 |  8120 |
+| avg fev                    | 19.1 | 101.5 |
+* 14 node
+| num 14 node graphs         |   509 |     0 |
+| num 14 node graphs with hc |   474 |     0 |
+| num hc found               |   370 |   252 |
+| % found                    |  78.1 |  53.2 |
+| tot fev                    | 10804 | 53598 |
+| avg fev                    |  22.8 | 113.1 |

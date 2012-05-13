@@ -16,6 +16,11 @@ function [A b] = hcp_con(P)
   
   A = sparse([j;i+n],[v;v],1);
   b = ones(2*n,1);
+
+  % produce stochastic constraint for test
+  %A = A(1:n,:);
+  %b = b(1:n);
+  
   %keyboard
   
 end

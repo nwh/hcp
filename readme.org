@@ -61,3 +61,15 @@ The code simple plots data from the table:
 |-----------------+--------+------+-----|
 
 
+** <2012-03-07 Wed> set up with random matrices
+** <2012-05-12 Sat> test with stochastic constraint
+
+This test attempts to solve the problem with only the stochastic constraint.
+
+I had to change hcp_con to make this work.
+
+** <2012-05-12 Sat> report generation for 10,12,14 node experiments
+
+I copied data from exp on 2012-01-18.
+
+

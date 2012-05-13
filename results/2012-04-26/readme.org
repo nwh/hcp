@@ -1,0 +1,7 @@
+* test with stochastic constraint
+
+This test attempts to solve the problem with only the stochastic constraint.
+
+I had to change hcp_con to make this work.
+
+
